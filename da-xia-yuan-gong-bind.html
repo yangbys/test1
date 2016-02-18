@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>大厦员工绑定</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/> 
+<link rel="stylesheet" href="style/rem.css" />
+<script src="js/jquery.min.js"></script>
+<script src="js/comm.js"></script>
+<script src="js/size.js" type="text/javascript"></script>
+</head>
+<body>
+	
+	<div id="main">
+		<section class="bind-sf">
+			<div class="binding">
+				<span><img src="img/wx.png" height="50" width="50"></span>
+				<em><img src="img/change.png" ></em>
+				<span><img src="img/app.png" height="50" width="50"></span>
+			</div>
+			<div class="bd-txt">
+				将app登陆账户和微信绑定，绑定成功后大厦人员也可以使用微信获取的过闸二维码过闸
+			</div>
+			<div class="bd-c">
+				<input type="tel" placeholder="手机">
+				<input type="text" placeholder="密码">
+			</div>
+			<div class="btn-c"><span class="btn" onClick="bindBtn();">绑定APP账户</span></div>
+		</section>
+	</div>
+	
+
+
+	<script type="text/javascript">
+		function bindBtn(){
+			TS.tip('手机号码格式错误')
+			TS.tip('绑定成功',1)//如个第二个参数是“1”，代表有按钮的....
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>绑定身份</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/> 
+<link rel="stylesheet" href="style/rem.css" />
+<script src="js/jquery.min.js"></script>
+<script src="js/comm.js"></script>
+<script src="js/size.js" type="text/javascript"></script>
+</head>
+<body>
+	
+	<div id="main">
+		<section class="bind-sf">
+			<div class="binding">
+				<span><img src="img/wx.png" height=42 width=42></span>
+				<em><img src="img/change.png" ></em>
+				<span><img src="img/sfz.png"></span>
+			</div>
+			<div class="bd-txt">
+				输入身份证后六位进行身份校验，校验通过则可绑定成功
+			</div>
+			<div class="bd-c">
+				<input type="tel" placeholder="请输入身份证后六位">
+			</div>
+			<div class="btn-c"><span class="btn" onclick="bindBtn()">绑定身份</span></div>
+		</section>
+	</div>
+	<script type="text/javascript">
+		function bindBtn(){
+			//TS.tip('手机号码格式错误')
+			window.location.href='deng-ji-lai-fan-xin-xing.html'
+		}
+	</script>
+</body>
+</html>

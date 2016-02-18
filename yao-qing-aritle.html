@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>公告内容</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/> 
+<link rel="stylesheet" href="style/rem.css" />
+<script src="js/size.js" type="text/javascript"></script>
+</head>
+<body>
+	
+	<div id="main">
+		<section class="yq-aritle">
+			<div class="yq-hm">
+				<h5 class="yq-head"><span>尊敬的小江同志：</span></h5>
+				<div class="yq-c">
+					您提供双温速录软件、双文练习系统、速录师国家资格考试系统、速录师国家题库实训知道教材等专业产品，为您的学、练、考提供一系列解决方案。我们还开设有速录师培训班、速录速记部，针对性教学、专业服务，为您着想
+				</div>
+				<p class="yq-time">会见时间： 2014.12.14 12:14:30</p>
+			</div>
+			<div class="map-hm">
+				<h5 class="map-head"><span>地址：广州市天河区岗顶百脑汇14楼</span></h5>
+				<div class="yq-map">
+					地址
+				</div>
+			</div>
+			<div class="btn-c"><span class="btn"><a href="code.html">你的专属大厦进出二维码</a></span></div>
+			<p class="sm-time">刷码有效期： 2014.12.15 </p>
+		</section>
+	</div>
+	<script>
+        (function (doc, win) {
+          var docEl = doc.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function () {
+			  var size=100;
+              var clientWidth = docEl.clientWidth;
+              if (!clientWidth) return;
+              docEl.style.fontSize = 100 * (clientWidth / 320) + 'px';
+            };
+
+          if (!doc.addEventListener) return;
+          win.addEventListener(resizeEvt, recalc, false);
+          doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+    </script>
+</body>
+</html>
